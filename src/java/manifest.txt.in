@@ -1,4 +1,9 @@
 Manifest-version: 1.0
+Bundle-Manifest-version: 2
+Bundle-Name: mraa
+Bundle-SymbolicName: mraa
+Bundle-Version: @VERSION_SHORT@
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 
 Name: mraa/
 Specification-Title: mraa
