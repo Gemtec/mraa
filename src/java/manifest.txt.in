@@ -4,6 +4,7 @@ Bundle-Name: mraa
 Bundle-SymbolicName: mraa
 Bundle-Version: @VERSION_SHORT@
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: mraa;version="@VERSION_SHORT@"
 
 Name: mraa/
 Specification-Title: mraa
