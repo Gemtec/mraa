@@ -99,6 +99,13 @@ class Spi;
 
 %pragma(java) jniclasscode=%{
     static {
+        try {
+            System.loadLibrary("mraajava");
+        } catch (UnsatisfiedLinkError e) {
+            System.err.println("Native code library failed to load. \n" + e);
+            System.exit(1);
+        }
+
         if((mraa.class.getPackage().getSpecificationVersion() != null)
                 &&  !(mraa.class.getPackage().getSpecificationVersion().equals("0.0"))
                 && (mraa.getVersion() != null)){
